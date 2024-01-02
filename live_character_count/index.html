@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Live character count</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div class="container">
+          <h2>Live character count</h2>
+
+          <textarea 
+          name="textarea" 
+          id="textarea" 
+          cols="50"
+          rows="10"
+          placeholder="write your text here..."
+          onkeyup="countingCharacters()"
+          >
+     </textarea>
+     <p>Total character you typed      including space: <span id="count">0</span> </p>
+
+     </div>
+     <script src="app.js"></script>
+</body>
+
+</html>
