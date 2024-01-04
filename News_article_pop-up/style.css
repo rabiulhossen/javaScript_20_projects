@@ -11,33 +11,23 @@ body {
      justify-content: center;
      font-family: serif;
      height: 100vh;
-     background: #0f0c29;
-     /* fallback for old browsers */
-     background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);
-     /* Chrome 10-25, Safari 5.1-6 */
-     background: linear-gradient(to left, #24243e, #302b63, #0f0c29);
-     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+     background-image: linear-gradient(-20deg, #b419fc 0%, #42d7f8 100%);
 }
 
 
 
 #newsletter{
      position: fixed;
-     /* top: -100%;
-     left: 50%; */
+     top: -100%;
+     left: 50%;
      transform: translate(-50%, -50%);
      z-index:1000 ;
-     width: 450px;
+     width: 500px;
      padding: 80px 50px 50px;
      border-radius: 5px;
-     /* visibility: hidden; */
+     visibility: hidden;
      transition: .5s;
-     background: #1D2B64;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+     background-image: linear-gradient(to top, #e64ed2 0%, #48d1e9 100%);
      
 
 }
@@ -51,14 +41,15 @@ background: linear-gradient(to left, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Fi
      color: #fff;
      font-size: 2rem;
      text-align: center;
-     margin:15px 25px;
+     margin:15px 20px;
 }
 
 
 
 #newsletter p{
      text-align: center;
-     color: #e42162;
+     color: #1e0120;
+     font-size: 1.3rem;
 }
 
 #newsletter .box{
@@ -70,26 +61,83 @@ background: linear-gradient(to left, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Fi
      justify-content: center;
 }
 
-input, button{
+input, .sign_button{
 width: 100%;
 border: 1px solid rgb(105, 19, 216);
-padding: 15px;
+padding: 10px;
 font-size: 1rem;
 outline: none;
-}
 
-button {
+}
+.sub_button {
+     width: 200px;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 10px;
+     padding: 0px 15px;
+     background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+     border-radius: 10px;
+     color: white;
+     border: none;
+     position: relative;
+     cursor: pointer;
+     transition-duration: .2s;
+   }
+   
+   .bell {
+     width: 13px;
+   }
+   
+   .bell path {
+     fill: rgb(0, 206, 62);
+   }
+   
+   .arrow {
+     position: absolute;
+     right: 0;
+     width: 30px;
+     height: 100%;
+     font-size: 18px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   
+   .sub_button:hover {
+     background-color: rgb(77, 77, 77);
+     transition-duration: .2s;
+   }
+   
+   .sub_button:hover .arrow {
+     animation: slide-right .6s ease-out both;
+   }
+   /* arrow animation */
+   @keyframes slide-right {
+     0% {
+       transform: translateX(-10px);
+       opacity: 0;
+     }
+   
+     100% {
+       transform: translateX(0);
+       opacity: 1;
+     }
+   }
+   
+   .sub_button:active {
+     transform: translate(1px , 1px);
+     transition-duration: .2s;
+   }
+
+.sign_button {
      position: relative;
      border: none;
      padding: 15px 40px;
      width: 150px;
      color: white;
-     background: #780206;
-     /* fallback for old browsers */
-     background: -webkit-linear-gradient(to left, #061161, #780206);
-     /* Chrome 10-25, Safari 5.1-6 */
-     background: linear-gradient(to left, #061161, #780206);
-     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     background-image: linear-gradient(-225deg, #231557 0%, #600cbb 29%, #FF1361 67%, #FFF800 100%);
      font-weight: 600;
     
      display: inline-block;
@@ -97,10 +145,20 @@ button {
      border-radius: 5px;
      cursor: pointer;
      transition: 0.5s;
+     letter-spacing: 0.1rem;
     
 }
-button:hover{
+.sign_button:hover{
      letter-spacing: 0.1rem;
      box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+     border-bottom:1px solid #F8CDDA;
+  
 
+}
+
+.close{
+     position: absolute;
+     cursor: pointer;
+     top: 25px;
+     right: 20px;
 }
