@@ -16,43 +16,43 @@ body {
 
 
 
-#newsletter{
+#newsletter {
      position: fixed;
      top: -100%;
      left: 50%;
      transform: translate(-50%, -50%);
-     z-index:1000 ;
+     z-index: 1000;
      width: 500px;
      padding: 80px 50px 50px;
      border-radius: 5px;
      visibility: hidden;
      transition: .5s;
      background-image: linear-gradient(to top, #e64ed2 0%, #48d1e9 100%);
-     
+
 
 }
 
-#newsletter.active{
+#newsletter.active {
      top: 50%;
-     visibility: visible; 
+     visibility: visible;
 }
 
-#newsletter h2{
+#newsletter h2 {
      color: #fff;
      font-size: 2rem;
      text-align: center;
-     margin:15px 20px;
+     margin: 15px 20px;
 }
 
 
 
-#newsletter p{
+#newsletter p {
      text-align: center;
      color: #1e0120;
      font-size: 1.3rem;
 }
 
-#newsletter .box{
+#newsletter .box {
      margin: 15px 25px;
      width: 100%;
      position: relative;
@@ -61,14 +61,16 @@ body {
      justify-content: center;
 }
 
-input, .sign_button{
-width: 100%;
-border: 1px solid rgb(105, 19, 216);
-padding: 10px;
-font-size: 1rem;
-outline: none;
+input,
+.sign_button {
+     width: 100%;
+     border: 1px solid rgb(105, 19, 216);
+     padding: 10px;
+     font-size: 1rem;
+     outline: none;
 
 }
+
 .sub_button {
      width: 200px;
      height: 40px;
@@ -84,17 +86,17 @@ outline: none;
      position: relative;
      cursor: pointer;
      transition-duration: .2s;
-   }
-   
-   .bell {
+}
+
+.bell {
      width: 13px;
-   }
-   
-   .bell path {
+}
+
+.bell path {
      fill: rgb(0, 206, 62);
-   }
-   
-   .arrow {
+}
+
+.arrow {
      position: absolute;
      right: 0;
      width: 30px;
@@ -103,33 +105,34 @@ outline: none;
      display: flex;
      align-items: center;
      justify-content: center;
-   }
-   
-   .sub_button:hover {
+}
+
+.sub_button:hover {
      background-color: rgb(77, 77, 77);
      transition-duration: .2s;
-   }
-   
-   .sub_button:hover .arrow {
+}
+
+.sub_button:hover .arrow {
      animation: slide-right .6s ease-out both;
-   }
-   /* arrow animation */
-   @keyframes slide-right {
+}
+
+/* arrow animation */
+@keyframes slide-right {
      0% {
-       transform: translateX(-10px);
-       opacity: 0;
+          transform: translateX(-10px);
+          opacity: 0;
      }
-   
+
      100% {
-       transform: translateX(0);
-       opacity: 1;
+          transform: translateX(0);
+          opacity: 1;
      }
-   }
-   
-   .sub_button:active {
-     transform: translate(1px , 1px);
+}
+
+.sub_button:active {
+     transform: translate(1px, 1px);
      transition-duration: .2s;
-   }
+}
 
 .sign_button {
      position: relative;
@@ -139,24 +142,25 @@ outline: none;
      color: white;
      background-image: linear-gradient(-225deg, #231557 0%, #600cbb 29%, #FF1361 67%, #FFF800 100%);
      font-weight: 600;
-    
+
      display: inline-block;
      text-decoration: none;
      border-radius: 5px;
      cursor: pointer;
      transition: 0.5s;
      letter-spacing: 0.1rem;
-    
+
 }
-.sign_button:hover{
+
+.sign_button:hover {
      letter-spacing: 0.1rem;
      box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
-     border-bottom:1px solid #F8CDDA;
-  
+     border-bottom: 1px solid #F8CDDA;
+
 
 }
 
-.close{
+.close {
      position: absolute;
      cursor: pointer;
      top: 25px;

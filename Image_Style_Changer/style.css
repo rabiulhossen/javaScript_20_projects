@@ -1,12 +1,15 @@
 * {
      margin: 0;
      padding: 0;
+     box-sizing: border-box;
 }
 
 body {
-     box-sizing: border-box;
-     margin: 20px;
-     padding: 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 30px;
+     height: 100vh;
      font-family: sans-serif;
      color: aliceblue;
 
@@ -17,16 +20,14 @@ body {
 .container {
      display: flex;
      justify-content: center;
-    
      flex-direction: column;
      background: rgb(18, 13, 103);
-     background: linear-gradient(90deg, rgba(18, 13, 103, 1) 0%, rgba(58, 131, 212, 1) 7%, rgba(9, 83, 121, 1) 20%, rgba(8, 134, 128, 1) 33%, rgba(98, 46, 158, 1) 48%, rgba(139, 5, 172, 1) 54%, rgba(144, 14, 133, 1) 66%, rgb(53, 197, 166) 80%, rgb(15, 108, 173) 93%, rgb(12, 87, 102) 100%);
+     background: linear-gradient(90deg, rgba(18, 13, 103, 1) 0%, rgba(58, 131, 212, 1) 7%, rgba(9, 83, 121, 1) 20%, rgb(23, 202, 193) 33%, rgba(98, 46, 158, 1) 48%, rgba(139, 5, 172, 1) 54%, rgb(219, 17, 202) 66%, rgb(53, 197, 166) 80%, rgb(15, 108, 173) 93%, rgb(12, 87, 102) 100%);
      padding: 20px;
      border-radius: 5px;
-
      width: 500px;
-     height: max-content;
-     margin: 0 auto ;
+     height: min-content;
+     margin: 0 auto;
      letter-spacing: 0.1rem;
 }
 
@@ -36,22 +37,23 @@ img {
 
      padding: 15px 0;
 }
-.box{
+
+.box {
      margin-left: 45px !important;
 }
 
 .box>h3 {
-     color: white;
+     color: rgb(245, 238, 248);
      text-align: left;
-     font-size: 1.3rem;
+     font-size: 1.2rem;
 }
 
-.box > input {
-     width: 395px;
-     height: 15px;
+.box>input {
+     width: 360px;
+     height: 13px;
      outline: none;
      cursor: pointer;
-     
+
 }
 
 
@@ -60,24 +62,30 @@ img {
 #box>input {
      width: 35px;
      height: 35px;
+     border-radius: 50%;
 }
 
 .box {
-     margin: 8px;
+     margin: 7px;
      text-align: left;
 }
-div > h2{
-     font-size: 1.4rem;
+
+div>h2 {
+     font-size: 1.3rem;
      padding: 5px;
      letter-spacing: 0.2rem;
-     text-align: center; 
-     font-weight: 800;
+     text-align: center;
+     font-weight: 600;
+     text-transform: capitalize;
+     color: black;
 }
-p{
-     font-size: 1.4rem;
+
+p {
+     font-size: 1.5rem;
      padding: 5px;
      letter-spacing: 0.2rem;
      text-align: center;
      margin-bottom: 10px;
-     font-weight: 600;
+     font-weight: 700;
+     color: #fcde9d;
 }
