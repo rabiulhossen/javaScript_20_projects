@@ -4,6 +4,17 @@
      box-sizing: border-box;
 }
 
+
+
+:root {
+     --padding:0px;
+     --blur: 0px;
+     --width: 70%;
+     --border-radius: 15px;
+     --border:5px solid rgb(235, 216, 50);
+     --base: #ffffff
+}
+
 body {
      display: flex;
      justify-content: center;
@@ -25,17 +36,23 @@ body {
      background: linear-gradient(90deg, rgba(18, 13, 103, 1) 0%, rgba(58, 131, 212, 1) 7%, rgba(9, 83, 121, 1) 20%, rgb(23, 202, 193) 33%, rgba(98, 46, 158, 1) 48%, rgba(139, 5, 172, 1) 54%, rgb(219, 17, 202) 66%, rgb(53, 197, 166) 80%, rgb(15, 108, 173) 93%, rgb(12, 87, 102) 100%);
      padding: 20px;
      border-radius: 5px;
-     width: 500px;
+     width: 50%;
      height: min-content;
      margin: 0 auto;
      letter-spacing: 0.1rem;
 }
 
 img {
-     width: 78%;
+     width: var(--width);
      margin-left: 3rem;
-
-     padding: 15px 0;
+     filter: blur(var(--blur));
+     transition: filter 0.3s ease, backgroud-color 0.3s ease;
+     border: var(--border);
+     border-radius: var(--border-radius);
+     padding: var(--padding);
+     height: 60%;
+     background: var(--base);
+    
 }
 
 .box {
@@ -48,8 +65,8 @@ img {
      font-size: 1.2rem;
 }
 
-.box>input {
-     width: 360px;
+.box>input[type=range] {
+     width: 100%;
      height: 13px;
      outline: none;
      cursor: pointer;
@@ -59,9 +76,26 @@ img {
 
 
 
-#box>input {
+input[type=color] {
      width: 35px;
      height: 35px;
+     border-radius: 50%;
+     vertical-align: middle;
+     border: none;
+     outline: none;
+     overflow: hidden;
+}
+
+.box>input[type=color] ::-webkit-color-swatch {
+
+     border: none;
+     border-radius: 50%;
+}
+
+
+.box>input[type=color] ::-webkit-color-swatch-wrapper {
+     padding: 0;
+     border: none;
      border-radius: 50%;
 }
 
