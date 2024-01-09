@@ -1,0 +1,42 @@
+body{
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     font-family: sans-serif;
+     margin: 15px;
+     transition: background-color 0.3s ease;
+}
+
+.container{
+
+     display: flex;
+     gap: 20px;
+
+}
+
+.button{
+     padding: 10px 20px;
+     font-size: 16px;
+     cursor: pointer;
+     border: none;
+     border-radius: 5px;
+}
+
+#black{
+     background-color: black;
+     color: white;
+}
+#blue{
+     background-color: blue;
+     color: white;
+}
+#yellow{
+     background-color: yellow;
+     color: black;
+}
+#white{
+     background-color: white;
+     color: black;
+}
