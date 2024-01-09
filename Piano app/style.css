@@ -1,0 +1,54 @@
+
+body{
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+     background-color: #c3f1ed;
+     margin: 20px;
+     padding: 20px;
+     border-radius: 10px;
+ }
+ 
+ .piano-container{
+     padding: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+ }
+ 
+ h1{
+     margin-top: 0;
+     padding: 5px;
+ }
+ 
+ button{
+     width: 60px;
+     height: 180px;
+     margin: 6px;
+     font-size: 16px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     font-weight: 500;
+ text-transform: uppercase;
+ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+ }
+ 
+ .white-key{
+     background-color: aliceblue;
+ }
+ 
+ .black-key{
+     background-color: black;
+     color: aliceblue;
+ }
+
+ .white-key:hover{
+     background-color: rgb(163, 208, 247);
+
+ }
+
+ .black-key:hover{
+     background-color: rgb(231, 162, 162);
+     color: black;
+ }
