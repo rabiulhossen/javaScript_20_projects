@@ -22,6 +22,10 @@ body{
      cursor: pointer;
      border: none;
      border-radius: 5px;
+     font-weight: 600;
+     text-transform: capitalize;
+     transition: background-color 0.3s ease;
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 #black{
@@ -37,6 +41,6 @@ body{
      color: black;
 }
 #white{
-     background-color: white;
+     background-color: rgb(243, 214, 159);
      color: black;
 }
