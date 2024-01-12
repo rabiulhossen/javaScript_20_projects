@@ -1,0 +1,37 @@
+* {
+     margin: 0;
+     padding: 0%;
+     box-sizing: border-box;
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+body {
+     background: linear-gradient(to right top, #4d4a4a, #363333, #928e8e, #beaaaa);
+     color: #fff;
+     height: 100vh;
+
+
+}
+
+
+.container {
+     width: 100%;
+     height: 95vh;
+
+     display: flex;
+
+}
+
+.left,
+.right {
+     flex-basis: 50%;
+     padding: 20px;
+}
+
+
+.left{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Code editor</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div class="container">
+          <div class="left">
+               <div class="box">
+                    <label for=""><i class="fa-brands fa-html5">HTML</i></label>
+                    <textarea name="html" id="html-code" cols="30" rows="10" onkeyup="update()"></textarea>
+               </div>
+               <div class="box">
+                    <label for=""><i class="fa-brands fa-css3">CSS</i></label>
+                    <textarea name="css" id="css-code" cols="30" rows="10" onkeyup="update()"></textarea>
+               </div>
+               <div class="box">
+                    <label for=""><i class="fa-brands fa-js">JavaScript</i></label>
+                    <textarea name="js" id="js-code" cols="30" rows="10" onkeyup="update()"></textarea>
+               </div>
+          </div>
+          <div class="right">
+               <label for=""><i class="fa-solid fa-play">Output</i></label>
+               <textarea name="output" id="output" cols="30" rows="10" onkeyup="update()"></textarea>
+          </div>
+     </div>
+
+</body>
+
+</html>
